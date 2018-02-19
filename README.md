@@ -35,3 +35,11 @@ The website is running from a virtual environment.
 5. create templates
 6. static files and so on
 
+# Migrate to host server
+1. create profile in the server
+2. copy the project directory to the profile created in the server
+3. configure the allow_host in the setting to allow the server IP address
+4. make sure all settings are well configured and the python is accessing the correct path
+6. make sure you install all the necessary packages in the server
+5. make sure your virtualenv has django installed in it
+
