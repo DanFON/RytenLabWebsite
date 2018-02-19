@@ -5,30 +5,30 @@ The site contains the research led by the group, group members/profiles, publica
 The website is running from a virtual environment.
 
 #Specification
-django 1.10.8 - 2.0.2
-python 2.7 - 3
-db.sqlite3
-postgres
-vs code
-vim
-pip3
-ubuntu 16.04
+1. django 1.10.8 - 2.0.2
+2. python 2.7 - 3
+3. db.sqlite3
+4. postgres
+5. vs code
+6. vim
+7. pip3
+8. ubuntu server 16.04 or latest version
 
 # Design stages & packages
-remove db.sqlite3 (if you wish to use postgresql)
-install postgresql
-install py-dev
-make a directory
-install a virtualenv
-create a virtual environment
-now istall Django version
-install psycopg2 (use with postgres)
-start new django project
-configure django database settings
-migrate database
-create super user
+1. remove db.sqlite3 (if you wish to use postgresql)
+2. install postgresql
+3. install py-dev
+4. make a directory
+5. install a virtualenv
+6. create a virtual environment
+7. now istall Django version
+8. install psycopg2 (use with postgres)
+9. start new django project
+10. configure django database settings
+11. migrate database
+12. create super user
 
 # Development process
-Start the website development
-create templates
-static files and so on
+1. Start the website development
+2. create templates
+3. static files and so on
