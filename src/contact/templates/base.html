@@ -1,0 +1,438 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link  href="{% static 'img/home.jpg' %}"  rel='icon' type='image/x-icon'/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Ryten Group</title>
+<!-- added -->
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="{% static 'css/styles.css'%}" rel="stylesheet"> 
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/starter-template.css' %}" rel="stylesheet">
+    <link rel='stylesheet' href='{% static "css/main.css" %}' />
+    
+    <link rel="stylesheet" type="text/css" href= " {% static "headerfooter.css" %}" />
+   
+    <!-- added -->
+    <!-- <link href = "css/styles.css" rel="stylesheet">    -->
+  </head>
+<body>
+
+    <!-- CREATE THE NAVIGATION BAR  1/10/2017-->
+    <div class ="navbaar navbar-default">
+        <div class="container">
+            <!-- <a href="#" class="navbar-brand">Ryten Lab</a>
+        <div>
+        <ul class="nav navbar-nav navbar-right">
+               
+                <li class="nav-item">
+                        <a class="nav-link" href="#">Publications</a>
+                    
+                      </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#">Publications</a>
+                          </li>
+        </ul>
+        </div>
+    </div> -->
+    
+  <!-- HEADER FOR THE WEBSITE -->
+  <!-- <div class="navbar navbar-static-top navbar-dark bg-inverse">
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">
+              &#9776;
+          </button> -->
+   
+  {% include 'navbar.html' %}
+  {% include 'imgslide.html' %}
+
+    <!-- <div class="container"> -->
+    {% block starter-template %}
+    {% endblock %}
+
+   
+<!-- <div class='col-sm-6'>
+  
+  
+  <p>
+      <img class="img-portfolio img-responsive" src="{% static 'img/home.jpg' %}">
+      
+  </p>
+  <p>
+      <img class="img-portfolio img-responsive" src="{% static 'img/home.jpg' %}">
+  </p> -->
+  
+<!-- </div>  ADDED NOW 5,.08 -->
+<!-- <div id='div1' style='overflow:scroll;overflow:auto;max-height:200000px;'></div> 
+    
+    <body>
+            <!<div class="page-header">
+                <h1><a href="/">Ryten Group</a></h1>
+            </div> -->
+            <div class="border"></div>
+            <div class="wrap">
+                <div class="content">
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+        <!-- </body>  -->
+        
+        
+       
+        
+        
+            <!-- Begin page content -->
+            <!-- <hr>
+            <div class="container">
+              <div class="mt-1">
+                <!-<h1>UCL Institute of Neurology</h1> -->
+              <!-- </div> -->
+              <!-- <p class="lead">Ryten Group</p> -->
+              <!-- <p>Use <a href="../sticky-footer-navbar">Molecular</a> Address, post code</p> -->
+            <!-- </div> --> 
+<!-- START HERE FOR SECOND FOOTER-->
+
+        <!-- <hr>
+        <body link="#FFFFFF" alink="#fefefe" alink="#FFFFFF" vlink="#FFFFFF">
+                <div class="page-wrap"></div>
+                
+        <div id="footer">
+            <footer>
+             
+
+            </footer>
+        </div>
+    
+            <div class="row-inner sc-type-row-inner shortcode">
+                <div class="sc-type-col col-xs-12 shortcode">
+                    <div class="wrap">
+                    </div>
+                </div>
+            </div> -->
+                    
+            
+            <!-- <div class="footer-contacts"> -->
+            <!-- NOT INVOLVED<span>T: +44 20 27676 73838</span> -->
+             <!--NOT INVOLVED <span>E: <a href="mailto:enquiries@earlham.ac.uk">enquiries@earlham.ac.uk</a></span> -->
+            <!-- <span>UCL Institute of Neurology, Department of Molecular Neuroscience, Russell Square House 10 -12, WC1B 5EH, London, United Kingdom</span> -->
+             <!-- NOT INVOLVED<span><a target="_blank" href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513">View institute map</a></span> -->
+            <!-- </div>
+            <div class="footer-company-details">
+            <span>Ryten Group</span>
+            <span>&copy; Copyright 2017 - All Rights Reserved</span>
+            <p class="text-muted">Page contact:  <a href="{% url 'daniel_onah' %}"> Daniel Onah</a></p>
+            <span class="text-muted">View Institute Direction: <a href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513"> Map</a></span>
+            <span class="text-muted">UCL webpage:  <a href="http://www.ucl.ac.uk/"> ucl.ac.uk</a></span>
+            </div> -->
+            
+            <!-- END HERE FOR USE LATER SECOND FOOTER-->
+
+
+
+
+            <!-- <div class="col-sm-3 myCols">
+                <h5>Legal</h5>
+                <ul class="footerMenu">
+                    <span><a target="_blank" href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513">View map</a></span>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div> -->
+
+            <!-- <footer class="footer-logo-row">
+                    <! <div class="container">
+                        <div class='col-sm-1'> -->
+                            <!-- <div class = "footer-logo ai_logo"> -->
+                            <!-- <a href="#" target="blank"> -->
+                              <!-- <img class ="img-portfolio img-responsive" src="{% static 'img/ai_logo.png' %}" width="60">   -->
+                            <!-- </a> -->
+                        <!-- </div> -->
+                        <!-- <footer class="footer-logo-row"> -->
+                                <!-- <div class="container">
+                                    <div class='col-sm-1'> -->
+                                        
+                                        <!-- <div class = "footer-logo kcl-logo"> -->
+                                        <!-- <a href="#" target="blank"> -->
+                                          <!-- <img class ="img-portfolio img-responsive" src="{% static 'img/kcl-logo.jpg' %}" width="50">   -->
+                                        <!-- </a> -->
+                                    <!-- </div> -->
+                                    
+                                    
+                     <!-- <ul>
+                      <span><img class ="img-portfolio img-responsive" src="{% static 'img/ai_logo.png' %}"></span>
+                     </ul>
+                     <ul>
+                      <span><img class ="img-portfolio img-responsive" src="{% static 'img/kcl-logo.jpg' %}"></span>
+                     </ul>
+                      <span><img class="img-portfolio img-responsive" src="{% static 'img/logo-um.jpg' %}"></span>
+                      <span><img class="img-portfolio img-responsive" src="{% static 'img/ukbec_logo.png' %}"></span>
+                      <img src="{% static 'img/ai_logo.png' %}" width="120" float-left> 
+                    </ul> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                  <!-- </footer> --> 
+                  
+                  <!-- <div class="footer-menu">
+                  <a href="{% url 'contact_us' %}" title="Contact us">Contact us</a>     
+                  </div>
+                       -->
+<!-- 
+                       <script>
+                           $(document).ready(function ($){
+                               $('#slideshow').bjqs({
+                                   'height': 0,
+                                   'width' : 0,
+                                   'responsive': true
+                               });
+                               });
+                           
+                       </script>
+                       </body> -->
+
+                        <hr>
+                        <style type="text/css">
+                         body {
+                         font-family : Verdana, Helvetica, Geneva, SunSans-Regular, sans-serif, arial ;
+                         background-color: #03030A;
+                         margin: 0 auto;
+                         position: relative;
+                         min-width:0px;
+                        top: 0px;
+                         }
+                         p.padding {
+                         padding-top:0px;
+                         padding-bottom:0px;
+                         padding-right:0px;
+                         padding-left:0px;
+                         }
+                         .home .site-header.no-header-image {
+                        left: auto;
+                        position: fixed;
+                        top: auto;
+                        }
+                        .home .site-content {
+                         padding-top: 60px;
+                        }
+                         table {
+                         margin: 5px;
+                         padding: 0;
+                         }
+                      
+                         #push{height:80px}
+                         
+                         #footer{padding-top:0px; border-top:0px solid #dadada; width:960px; margin:0px auto 0;         height:0px; color:#4d4d4d;}
+                         
+                         #footer p{font-size:1.2em; color:#4d4d4d; line-height:1.5em; margin-bottom:0; margin-top:0.6em}
+                         
+                         .copyrightbar {
+                         margin: 0 auto;
+                         border-collapse: collapse;
+                         border: 0px;
+                         padding: 0px;
+                         }
+                         /* ADDED YESTERDAY FOR FOOTER */
+                         footer{
+                          
+                         width:100%;
+                        min-height:100px;    
+                         background-color:  #03030A; /* This color gets inverted color or you can add navbar inverse class in html */
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        } 
+                        footer p{
+                            margin-bottom: .25rem;
+                        }
+                        /* header{
+                        
+                         width:100%;
+                        min-height:100px;    
+                         background-color:#1873d8 !important/* This color gets inverted color or you can add navbar inverse class in html */
+                        /* }  */ */
+                        .page-header{
+
+                            margin-top:0; 
+                        
+                        }
+                        .panel-body{
+                            padding-top: 0;
+                        }
+                        .item img {
+                            width:55%;
+                            height: 100%;
+                          } 
+                    
+
+                          /* Mobile */
+@media (max-width: 767px) {
+    .slider-size {
+        height: auto;
+    }
+    .slider-size > img {
+         width: 100%;
+    }
+}
+
+/* tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    .slider-size {
+        height: auto;
+    }
+    .slider-size > img {
+        width: 100%;
+    }
+}
+
+/* laptops */
+@media (max-width: 1023px) and (min-width: 992px) {
+    .slider-size {
+         height: 200px;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+}
+
+/* desktops */
+@media (min-width: 1024px) {
+    .slider-size {
+        height: 650px;
+    }
+    .slider-size > img {
+        width: 100%;
+    }
+}
+          
+                         </style> 
+                        <!--<footer class="footer navbar-fixed-bottom">
+                                <div class="container">
+                                </div>
+                           </footer>  -->
+
+                           <!-- LONG FOOTER COMMENTED  1/10/2017-->
+
+                         <!-- <div class="push"></div>
+                         </div> <Page Wrap-->
+                             <!-- <div id="footer"> -->
+                            <!-- <table class="copyrightbar"> --> 
+
+                                    
+                                 
+                             <!-- <footer>                                
+                             <a href="{% url 'contact_us' %}">Contact us</a>    
+                             </footer> -->
+                             <!-- <div class="footer-contacts">
+                                 <p>
+                             <div>Ryten Group, UCL Institute of Neurology, Department of Molecular Neuroscience, Russell Square House 10 -12, WC1B 5EH, London, United Kingdom</div>
+                                 <! <span><a target="_blank" href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513">View institute map</a></span> -->
+                             <!-- </div id="footer"> -->
+                                <!-- <div class="footer-company-details"> -->
+                                <!-- <span>Ryten Group</span> -->
+                                <!-- <div class="text-muted">View Institute Direction: <a href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513"> Map</a></div> -->
+                                <!-- <div class="text-muted">UCL webpage:  <a href="http://www.ucl.ac.uk/"> ucl.ac.uk</a></div> -->
+                                <!-- <div class="text-muted">Page contact:  <a href="{% url 'daniel_onah' %}"> Daniel Onah</a></div>   -->
+                                <!-- </p> -->
+                            <!-- </div>  -->
+                                <!-- </div> -->
+                                                 <!-- <tr><td><p class="padding"><font color="white">Phone: 555-555-1800<br>hello</p></font>        </td> -->
+                         
+                                    <!-- <td> <p> <font color="white"> Sample text<br></font> -->
+                         <!-- </td></tr> --> 
+                           <!-- </table><table> <br>
+                           
+                            <div class="footer-contacts">
+
+                                <div class="footer">
+                                        <div class="navbar-static-bottom" id="footer"></div>
+                                    <p>
+                                        
+                                            <footer class="footer navbar-fixed-bottom">
+                                                    <div class="container"> 
+
+                            </div> -->
+                       <!-- END OF LONG FOOTER -->
+                        
+                         <!-- <footer for the new web -->
+                             <footer class="text-muted">
+                                 <div class ="container">
+                                     <!-- <button class="btn btn-default btn-lg pull-ex-right"
+
+                            < a href ="#"> </a> 
+                            </button> -->
+                            <!-- <p><a href="http://www2.warwick.ac.uk">Desk</a>2016</p> -->
+                            <p> 
+                                
+                                    <div>Ryten Lab, UCL Institute of Neurology, Department of Molecular Neuroscience, Russell Square House 10 -12, WC1B 5EH, London, United Kingdom</div>
+                                    <!-- <span><a target="_blank" href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513">View institute map</a></span> -->
+                                <!-- </div id="footer"> -->
+                                   <div class="footer-company-details">
+                                   <!-- <span>Ryten Group</span> -->
+                                   <div class="text-muted">View Institute Direction: <a href="https://www.google.co.uk/maps/place/UCL+Institute+of+Neurology/@51.522576,-0.122513,15z/data=!4m5!3m4!1s0x0:0x80ce5027d60ee736!8m2!3d51.522576!4d-0.122513"> Map</a></div>
+                                   <div class="text-muted">UCL webpage:  <a href="http://www.ucl.ac.uk/"> ucl.ac.uk</a></div>
+                                   <div class="text-muted">Page contact:  <a href="{% url 'daniel_onah' %}"> Daniel Onah</a></div>  
+                                   </p>
+                               </div> 
+                                </div> 
+                                <div align="left">
+                                
+                                <img src="{% static 'img/ai_logo.png' %}" width="120" float-left>
+                                <img src="{% static 'img/logo-um.jpg' %}" width="120" float-left> 
+                                <img src="{% static 'img/ukbec_logo.png' %}" width="120" float-left> 
+                                <img src="{% static 'img/kcl-logo.jpg' %}" width="60" float-left> 
+                                <img src="{% static 'img/ucl-logo.png' %}" width="45" float-left>
+                                <!-- <img src="{% static 'img/ucl-logo2.png' %}" width="48" float-left> -->
+                                </div>
+
+                                <!-- NOTE -->
+                              <!-- ctrl K + C -comment text -->
+                                    
+                               
+                                
+                                <div class="container-fluid" style='margin-left:0px'>
+                                    <p> Follow us <a href="#" target="blank">Contact</a> |<a href="#" target="blank"> Facebook </a> | <a class="linked-in-icon" href="#" target="blank">LinkedIn</a> | <a href="#" target="blank">Twitter</a> | <a href="#" target="blank">Google+</a></p>
+                                 <p align="left"><font color="white" font size="2">                 <i>Ryten Lab &copy; Copyright 2017 - All Rights Reserved. </i> </font></p> 
+                                </div>
+
+                         </div>
+                            
+                            </p>
+                            </div>
+                            </footer>
+
+                            <!-- < end of footer -->
+
+
+
+
+                                        
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="{% static 'javascript/popper.min.js' %}"></script>
+    <script src="{% static 'javascript/bootstrap.min.js %'}"></script>
+    <!-- added next two lines-->
+    <script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <!-- <script src= "js/bootstrap.js"></script> -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>  
+</html>
+
+

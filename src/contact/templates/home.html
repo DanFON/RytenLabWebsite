@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+
+ </style> 
+{% endblock %}
+
+{% block starter-template %}
+<div class="starter-template">
+    <h1>University College London</h1>
+    <p class="lead">UCL Institute of Neurology<br>Ryten Group</p>
+  </div>
+{% endblock %}
+
+{% block conten %}
+<div class= "container">
+  <div class="row">
+  <div class="col-sm-8 blog-main">
+   <a href="a"><img src="{% static '/media/profile_image/home.jpg' %}" class='img-responsive'/>
+  </div>
+  <div class="col-md-4">
+    <h2>Heading</h2>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+  </div>
+  <div class="col-md-4">
+    {% if request.user.is_authenticated %}
+    <h3>Hello {{request.user}}</h3>
+
+    {% else %}
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+    {% csrf_token %}
+      
+    
+    <div id="div_id_login" class="form-group"> <label for="id_login" class="control-label  requiredField">
+                    Login<span class="asteriskField">*</span> </label> <div class="controls "> <input name="login" autofocus="autofocus" required="" placeholder="Username or e-mail" class="textinput textInput form-control" id="id_login" type="text"> </div> </div> <div id="div_id_password" class="form-group"> <label for="id_password" class="control-label  requiredField">
+                    Password<span class="asteriskField">*</span> </label> <div class="controls "> <input name="password" required="" placeholder="Password" class="textinput textInput form-control" id="id_password" type="password"> </div> </div> <div class="form-group"> <div id="div_id_remember" class="checkbox"> <label for="id_remember" class=""> <input name="remember" class="checkboxinput" id="id_remember" type="checkbox">
+                        Remember Me
+                    </label> </div> </div>
+      <a class="btn btn-link button secondaryAction" href="{% url 'account_reset_password' %}">Forgot Password?</a>
+      <a class="btn btn-link button secondaryAction" href="{% url 'account_signup' %}">Signup</a>
+      <button class=" btn btn-default primaryAction" type="submit">Sign In</button>
+    </form>  
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
+        
+<div class="row">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="..." alt="...">
+      </a>
+    </div>
+    
+  </div>
+  {% block content %}
+  <div class="container">
+  <h1><font color="blue">Home</font></h1>
+ <html>
+  <body>
+    
+    
+      <p>
+      <b><font color ="black">RYTEN LAB</font></b> is a research team in the department of Molecular Neuroscience within UCL Institute of Neurology (ION). The lab is located at Russell Square House.
+      
+      Ryten Lab is a interdisciplinary group brining together practical , experimental and methodological researchers in the areas of Medicine , Computer Science and Biology. The group has collaborations with clinicians and NHS hospital.
+      
+      The overall objective of the team is to develop numerical algorithms and methods of neurological brain diseases from patient data (clinical and genomic data). In order to achieve this objectives, we develop new models of data representation and applying statistical approaches that can intergrate different dataset samples acquired from patient post-
+      morten human tissues.  These data-set in form of tissues and genes are then expressed using different statistical and methodological approaches such as ; gene expression,  weighted co-expression network analysis (WGCNA). In turn these models will allow for adequate or to some extend  help in the identification of gene expression.  This process will allow us to acquire better understaing of the nature of the genes co-expressed and provide avenue to understand the disease progression which in turn will lead to new decision to support the diagnosis and design of clinical trials.
+      Models developed in the group are being created as software packages that could be use by researchers for further analysis.
+      </p>
+
+
+      <p>
+     <h5><b>Methodological concentrations:</b></h5>
+      <ul>
+      <li> Machine Learning</li>
+      <li> WGCNA </li>
+      <li> K-Means</li>
+      <li> Statistical processess (e.g gene correlation with the eigengene) </li>
+      <li> Graphical analysis of outcomes </li>
+      <li> eQTL analysis </li>
+      </ul>
+     </p>
+
+     <p>
+      
+      <h5><b>Disease applications:</b></h5>
+
+      <ul>
+      <li> Parkinson’s diseases</li>
+      <li> Alzheimer’s disease</li>
+      <li> Demetia’s  disease</li>
+      </ul>
+     </p>
+     <p>
+        <h5><b> Group meeting </b></h5>
+        <img class="rounded-circle" src="{% static 'img/lab1.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
+        
+      
+        <img class="rounded-circle" src="{% static 'img/lab2.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
+         
+        
+        <img class="rounded-circle" src="{% static 'img/lab3.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
+  
+        <img class="rounded-circle" src="{% static 'img/lab4.jpg' %}" alt="Generic placeholder image" width="250" height="250"> 
+  
+        
+  </p>
+
+  </body>
+ </html>
+  </div>
+  </body>
+ </html>
+  {% endblock %}
+
+
+  

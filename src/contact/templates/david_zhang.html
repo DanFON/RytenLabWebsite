@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+
+ </style> 
+{% endblock %}
+
+{% block starter-template %}
+<div class="starter-template">
+    <!-- <h1>University College London</h1>
+    <p class="lead">UCL Institute of Neurology<br>Ryten Group</p> -->
+  </div>
+{% endblock %}
+
+{% block content %} 
+<html>
+<h1><b><font color="brawn">David Zhang</font></b></h1>
+<hr>
+<body>    
+<div class='col-sm-6'>
+    
+  <p>  
+    <!-- <center> -->
+  <!-- <img class="img-portfolio img-responsive" src="{% static 'img/onah.jpg' %}" width="140" height="140"> for square pictures-->
+  <img class="rounded-circle" src="{% static 'img/david.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+ 
+    <!-- </center> -->
+   <h4> <font color="red">Research Assistant</font></h4>
+   <h5>  M.Sc.  B.Sc. (Hons)</h5>
+    <div class="line"> Contact details:</div> 
+    <div class ="line">Tel:+44 75 0808 2603</div>
+    <div class="line"> Email: <a href="mailto:david.zhang.12@ucl.ac.uk"> david.zhang.12@ucl.ac.uk </a></div> 
+    <div class ="line" ><b>Funded by:</b><font color="blue">UCL Institute of Neurology </font></div>
+    <!-- <div class="line">Fax:&nbsp;020 4444 2000   </div>  -->
+    <!-- <div class ="line">Tel:&nbsp;+44 20 567 73861 </div> -->
+  </div>
+  <!-- <p class="">Software Developer</p> 
+  <!- <p class="">Ryten Group</p> -->
+
+<div class="container">
+<html>
+<body>
+        <h4><font color="blue"> Research Interests</font></h4>
+        <li> Investigating the impact of genetic variation on gene expression and splicing within human tissues.</li> 
+        <li> Identifying novel variants that relate to the pathogenesis of neurological disease.</li> 
+        <li> Developing bioinformatics analysis pipelines that combine functional transcriptomic information with DNA-sequencing to improve the rate of genetic diagnosis.</li> 
+        <h4><font color="blue"> Biography</font> </h4>
+        
+        I completed my BSc Biomedical science in 2015 and went on to undertake a MSc Neuroscience degree, during which I studied the role of mitochondrial dysfunction in the pathogenesis of neurodegeneration in Xeroderma Pigmentosum patients. My first introduction to bioinformatics came following year whilst I was working as a research technician, where I investigated the effect of genetic variation on the age of onset of dementia and cognition within Down syndrome patients. I started my PhD in the Ryten lab in 2017 and my project currently involves using transcriptomic data increase the diagnostic yield from genetic testing. 
+        
+  <br>
+       <h4><p><font color="blue"> Extra Curricular activities</font></p></h4>
+       Running, reading, chess 
+</br>
+        <h4><font color="blue">List of selected Publications</font></h4>
+  
+    
+</html>
+</div>
+</body>
+</html>
+{% endblock %}

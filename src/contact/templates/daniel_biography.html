@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+
+ </style> 
+{% endblock %}
+
+{% block starter-template %}
+<div class="starter-template">
+    <!-- <h1>University College London</h1>
+    <p class="lead">UCL Institute of Neurology<br>Ryten Group</p> -->
+  </div>
+{% endblock %}
+
+{% block content %} 
+<h1>Daniel Onah, PhD</h1>
+<body>    
+<div class='col-sm-6'>
+  
+  <p>
+  <img class="img-portfolio img-responsive" src="{% static 'img/onah.jpg' %}">
+  </p>
+  <p class="">Software Developer</p>
+  <!-- <p class="">Ryten Group</p> -->
+  <p> 
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-left">
+        <li><a href="{% url 'daniel_biography' %}">Biography</a>
+        <li><a href="{% url 'daniel_publications' %}">Publications</a>
+        </li>
+        </li>
+        </ul>
+    </div>
+  </p>
+  <p>
+       <h1> Biography </h1>
+       
+        Dr Onah, a native born of Nigeria is an academic of strong international standing in Computer Science 
+        and Computer Systems Engineering (Software Systems). Dr Onah received BSc (Honors) degree in Computer Science 
+        from Nigeria and received the MSc (Eng.) degree in Computer Systems Engineering with specialization 
+        in Software Systems from the University of East London, United Kingdom in 2011 and the 
+        Doctor of Philosophy in Computer Science from the University of Warwick, United Kingdom in 2017.
+       
+  </p>
+  <p>
+    <h1> Research Interest</h1>
+    I'm interested in co-expression network and gene expression
+  </p>
+
+  <p>
+      <h1> Extra Curricula activities</h1>
+      Programming and chess
+    </p>
+
+
+</div> 
+</body>
+{% endblock %}

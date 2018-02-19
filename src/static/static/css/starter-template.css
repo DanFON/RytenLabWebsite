@@ -1,0 +1,27 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.scrollup {
+  width: 0px;
+  height: 0px;
+  opacity: 0px;
+  position:relative;
+  overflow: auto;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+  text-indent: -0px;
+  background: url('icon_top.png') no-repeat;
+}
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.footer {
+  background-color: #403FF3;
+}
+

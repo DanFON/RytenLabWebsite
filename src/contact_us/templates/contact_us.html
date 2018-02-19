@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+ </style> 
+{% endblock %}
+
+{% block starter-template %}
+<div class="starter-template">
+    <!-- <h1>University College London</h1>
+    <p class="lead">UCL Institute of Neurology<br> Department of Molecular Neuroscience</p> -->
+  </div>
+{% endblock %}
+
+{% block content %}
+
+<div class ='row'>
+<div class='col-sm-9 col-sm-offset-3'>
+<h1>{{title}}</h1>
+
+We welcome all kinds of enquiries. Please use the contact form to get in touch with us by email.
+
+{% if confirm_message %}
+<p> {{confirm_message}}</p>
+{% endif %}
+{% if form %}
+<form method='POST' action=''>{% csrf_token %}
+{{ form|crispy }}
+<input type='submit' value='Send message' class ='btn btn-primary' />
+<!-- <input type='submit' value='Send message' class ='btn btn-default' /> This default shows without color, but primary show colors. -->
+</form>
+{% endif %}
+</div>
+
+</div>
+{% endblock %}
+        

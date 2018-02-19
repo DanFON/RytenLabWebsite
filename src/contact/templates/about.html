@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+
+ </style> 
+{% endblock %}
+
+{% block starter-template %}
+<div class="starter-template">
+    <h1>University College London</h1>
+    <p class="lead">UCL Institute of Neurology<br>Ryten Group</p>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1>About us</h1>
+<html>
+<body>
+  <p>
+      We study the regulation and alternative splicing of gene expression in multiple tissues from human brains.
+      
+      This dataset currently comprises of 134 brains from individuals free of neurodegenerative disorders. Up to twelve brain regions were extracted per brain in parallel for mRNA quantification. DNA was also collected to enable genotyping and expression quantitative trait loci (eQTL) analysis. 
+  
+  </p>
+    
+    <!-- <img class="rounded-circle" src="{% static 'img/lunch.jpg' %}" alt="Generic placeholder image" width="500" height="500">  -->
+    
+     <img class="img-portfolio img-responsive" src="{% static 'img/lunch.jpg' %}" width="500" height="500">  
+  <!-- <img class="rounded-circle" src="{% static 'img/lunch.jpg' %}" alt="Generic placeholder image" width="500" height="500">  -->
+    <b><font color= "green"> A team that have lunch together stay together , work together and produce results together!!!</font></b>
+  <p>A reader is interested in a specific news article and you want to find similar articles to recommend.  What is the right notion of similarity?  Moreover, what if there are millions of other documents?  Each time you want to a retrieve a new document, do you need to search through all other documents?  How do you group similar documents together?  How do you discover new, emerging topics that the documents cover?   
+    In this third case study, finding similar documents, you will examine similarity-based algorithms for retrieval.  In this course, you will also examine structured representations for describing the documents in the corpus, including clustering and mixed membership models, such as latent Dirichlet allocation (LDA).  You will implement expectation maximization (EM) to learn the document clusterings, and see how to scale the methods using MapReduce.
+  </p>
+  </body>
+</html>
+</div>
+</body>
+</html>
+{% endblock %}
+        
+

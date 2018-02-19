@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block styles %}
+<style>
+.starter-template {
+  text-align: center;
+}
+
+
+ </style> 
+{% endblock %}
+
+{% block starter-template %}
+<div class="starter-template">
+    <!-- <h1>University College London</h1>
+    <p class="lead">UCL Institute of Neurology<br>Ryten Group</p>
+  </div> -->
+</div>
+{% endblock %}
+
+{% block content %} 
+
+<body>
+    <!-- Our team are made up of ... members who specializes in various aspect of Neurology. -->
+    
+<div class='col-lg-11'>
+  <div class = 'clo-sm-6'>
+      <p>
+        <div align="center">
+  
+                <h1>Lab Members</h1>
+
+  <!-- <img class="img-portfolio img-responsive" src="{% static 'img/onah.jpg' %}"> NB this is for square pictures  -->
+  <!-- </p> -->
+  <!-- <p class="">Dr Daniel Onah</p> -->
+  <!-- <p>   -->
+        
+ 
+    <div align="center"> 
+  <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="140" height="140">
+  <a href=""> Mina Ryten </a>
+  <img class="rounded-circle" src="{% static 'img/juan.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+  <a href="{% url 'juan_botia' %}">Juan Botia</a>
+  <img class="rounded-circle" src="{% static 'img/onah.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+  <a href="{% url 'daniel_onah' %}"> Daniel Onah </a>
+  <img class="rounded-circle" src="{% static 'img/regina.jpg' %}" alt="Generic placeholder image" width="140" height="140">  
+  <a href="{% url 'regina_reynolds' %}"> Regina Reynolds </a>
+  <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="140" height="140">
+  <a href=""> Sebastian Guelfi </a>
+  <p>
+  <img class="rounded-circle" src="{% static 'img/david.jpg' %}" alt="Generic placeholder image" width="140" height="140">    
+  <a href="{% url 'david_zhang' %}"> David Zhang </a>
+  <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="140" height="140">
+  <a href=""> Karishma  D'sa </a>
+  <!-- <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="  width="140" height="140">
+  <a href=""> name </a></p> -->
+  
+  </p>
+  </div>
+  <div>
+  
+     
+  
+
+  <!-- Dr Onah, a native born of Nigeria is an academic of strong international standing in Computer Science 
+  and Computer Systems Engineering (Software Systems). Dr Onah received BSc (Honors) degree in Computer Science 
+  from Nigeria and received the MSc (Eng.) degree in Computer Systems Engineering with specialization 
+  in Software Systems from the University of East London, United Kingdom in 2011 and the 
+  Doctor of Philosophy in Computer Science from the University of Warwick, United Kingdom in 2017. -->
+  
+  <!-- <p>
+      <img class="img-portfolio img-responsive" src="{% static 'img/home.jpg' %}">
+  </p> -->
+  
+</div> 
+</div>
+</body>
+{% endblock %}
